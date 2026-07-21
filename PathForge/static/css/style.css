@@ -1,0 +1,975 @@
+/* =========================================================
+   PATHFORGE AI
+   STYLE SHEET
+   ========================================================= */
+
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+
+    --bg-1:#edf4f7;
+    --bg-2:#dce8ee;
+    --bg-3:#c2d3db;
+
+    --card:rgba(255,255,255,.62);
+
+    --text:#1e293b;
+
+    --secondary:#64748b;
+
+    --primary:#0f766e;
+
+    --primary-hover:#115e59;
+
+    --accent:#0891b2;
+
+    --border:rgba(255,255,255,.35);
+
+    --shadow:0 20px 50px rgba(15,23,42,.12);
+
+    --radius:24px;
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    font-family:'Plus Jakarta Sans',sans-serif;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    color:var(--text);
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--bg-1),
+        var(--bg-2),
+        var(--bg-3)
+    );
+
+    position:relative;
+
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+/* ===========================
+   BLOBS
+=========================== */
+
+.blob{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(100px);
+
+    opacity:.45;
+
+    animation:floatBlob 16s ease-in-out infinite;
+
+}
+
+.blob1{
+
+    width:420px;
+
+    height:420px;
+
+    background:#7dd3c7;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.blob2{
+
+    width:380px;
+
+    height:380px;
+
+    background:#7dd3fc;
+
+    bottom:-100px;
+
+    right:-80px;
+
+}
+
+.blob3{
+
+    width:280px;
+
+    height:280px;
+
+    background:#99f6e4;
+
+    top:40%;
+
+    left:45%;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+/* ===========================
+   GLASS CARD
+=========================== */
+
+.glass-card{
+
+    width:100%;
+
+    max-width:860px;
+
+    background:var(--card);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:55px;
+
+    transition:.35s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:45px;
+
+}
+
+.logo-icon{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:800;
+
+    font-size:22px;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+}
+
+.logo h3{
+
+    font-size:24px;
+
+    font-weight:800;
+
+}
+
+.logo p{
+
+    color:var(--secondary);
+
+    margin-top:4px;
+
+}
+
+/* ===========================
+   HERO TEXT
+=========================== */
+
+h1{
+
+    font-size:3.5rem;
+
+    line-height:1.1;
+
+    margin-bottom:18px;
+
+    font-weight:800;
+
+}
+
+.hero-text{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:var(--secondary);
+
+    margin-bottom:35px;
+
+    max-width:650px;
+
+}
+
+/* =========================================================
+   SEARCH BOX
+========================================================= */
+
+.search-box{
+
+    margin-bottom:35px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    font-size:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.75);
+
+    color:var(--text);
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.08);
+
+}
+
+.search-box input::placeholder{
+
+    color:#64748b;
+
+}
+
+.search-box input:focus{
+
+    background:white;
+
+    box-shadow:
+
+    0 0 0 4px rgba(8,145,178,.18);
+
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title{
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+    margin-top:30px;
+
+    color:var(--text);
+
+    font-weight:700;
+
+}
+
+/* =========================================================
+   SELECTED SKILLS
+========================================================= */
+
+.selected-skills{
+
+    min-height:65px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.45);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    margin-bottom:30px;
+
+}
+
+.empty-text{
+
+    color:var(--secondary);
+
+    font-size:15px;
+
+}
+
+/* =========================================================
+   SELECTED CHIP
+========================================================= */
+
+.selected-chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    animation:popIn .25s ease;
+
+}
+
+.selected-chip span{
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.2s;
+
+}
+
+.selected-chip span:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+button{
+
+    font-family:inherit;
+
+}
+
+form button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    transition:.3s;
+
+    margin-bottom:40px;
+
+}
+
+form button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 18px 35px rgba(15,118,110,.25);
+
+}
+
+/* =========================================================
+   SKILL GRID
+========================================================= */
+
+.skill-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+/* =========================================================
+   SKILL CHIP
+========================================================= */
+
+.skill-chip{
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:30px;
+
+    padding:12px 18px;
+
+    background:white;
+
+    color:var(--text);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    box-shadow:
+
+    0 6px 15px rgba(15,23,42,.08);
+
+}
+
+.skill-chip:hover{
+
+    transform:translateY(-4px);
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    color:white;
+
+}
+
+/* =========================================================
+   ACTIVE CHIP
+========================================================= */
+
+.skill-chip.active{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    color:white;
+
+}
+
+/* ======================================
+   CHIP ANIMATION
+====================================== */
+
+@keyframes popIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.6);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ======================================
+   SCROLLBAR
+====================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#dbe4ea;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0f766e;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#115e59;
+
+}
+
+/* ====================================
+   RESULTS PAGE
+==================================== */
+
+.results-page{
+
+    width:95%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:70px 20px;
+
+}
+
+.results-header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.results-header h1{
+
+    font-size:3rem;
+
+    margin-bottom:10px;
+
+}
+
+.results-header p{
+
+    color:var(--secondary);
+
+}
+
+.results-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+    gap:25px;
+
+}
+
+.result-card{
+
+    background:var(--card);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+.result-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.career-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.career-top h2{
+
+    font-size:1.4rem;
+
+}
+
+.score-badge{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    background:#dbe4ea;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+}
+
+.progress-fill{
+
+    width:var(--progress);
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    animation:growBar 1.2s ease;
+
+}
+
+.result-card h4{
+
+    margin-top:18px;
+
+    margin-bottom:10px;
+
+}
+
+.result-card p{
+
+    line-height:1.8;
+
+    color:#475569;
+
+}
+
+.roadmap{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:12px;
+
+}
+
+.roadmap-step{
+
+    background:white;
+
+    padding:10px 15px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.back-section{
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+.back-section a{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    padding:14px 26px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+}
+
+@keyframes growBar{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+/* ===================================
+   LOADING SCREEN
+=================================== */
+
+.loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(236,243,247,.95);
+
+    backdrop-filter:blur(18px);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.loading-card{
+
+    width:420px;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    background:white;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.loader-logo{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+.loading-card h2{
+
+    margin-bottom:10px;
+
+}
+
+#loadingText{
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+}
+
+.loading-bar{
+
+    width:100%;
+
+    height:12px;
+
+    border-radius:20px;
+
+    background:#dbe4ea;
+
+    overflow:hidden;
+
+}
+
+#loadingProgress{
+
+    width:0;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    transition:.25s;
+
+}
+
+#loadingPercent{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}

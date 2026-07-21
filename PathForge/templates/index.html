@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PathForge AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <main class="hero">
+
+        <section class="glass-card">
+
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon">PF</div>
+                <div>
+                    <h3>PathForge AI</h3>
+                    <p>Career Intelligence Platform</p>
+                </div>
+            </div>
+
+            <!-- Heading -->
+            <h1>Build Your Future<br>One Skill at a Time.</h1>
+
+            <p class="hero-text">
+                Discover career paths that match your technical skills using
+                AI-powered recommendations based on TF-IDF and Cosine Similarity.
+            </p>
+
+            <!-- Search: type & press Enter to add a skill -->
+            <div class="search-box">
+                <input type="text" id="searchSkill"
+                    placeholder="Search or type a skill and press Enter...">
+            </div>
+
+            <!-- Selected Skills -->
+            <h4 class="section-title">Selected Skills</h4>
+
+            <div id="selectedSkills" class="selected-skills">
+                <span class="empty-text">No skills selected</span>
+            </div>
+
+            <!-- Popular Skills — now ABOVE the button -->
+            <h4 class="section-title">Popular Skills</h4>
+
+            <div class="skill-grid">
+                <button class="skill-chip" data-skill="Python">Python</button>
+                <button class="skill-chip" data-skill="JavaScript">JavaScript</button>
+                <button class="skill-chip" data-skill="HTML">HTML</button>
+                <button class="skill-chip" data-skill="CSS">CSS</button>
+                <button class="skill-chip" data-skill="React">React</button>
+                <button class="skill-chip" data-skill="Node.js">Node.js</button>
+                <button class="skill-chip" data-skill="Flask">Flask</button>
+                <button class="skill-chip" data-skill="SQL">SQL</button>
+                <button class="skill-chip" data-skill="Machine Learning">Machine Learning</button>
+                <button class="skill-chip" data-skill="TensorFlow">TensorFlow</button>
+                <button class="skill-chip" data-skill="Docker">Docker</button>
+                <button class="skill-chip" data-skill="AWS">AWS</button>
+                <button class="skill-chip" data-skill="Linux">Linux</button>
+                <button class="skill-chip" data-skill="Git">Git</button>
+                <button class="skill-chip" data-skill="REST API">REST API</button>
+                <button class="skill-chip" data-skill="Pandas">Pandas</button>
+                <button class="skill-chip" data-skill="NumPy">NumPy</button>
+                <button class="skill-chip" data-skill="Firebase">Firebase</button>
+                <button class="skill-chip" data-skill="Flutter">Flutter</button>
+                <button class="skill-chip" data-skill="Figma">Figma</button>
+                <button class="skill-chip" data-skill="TypeScript">TypeScript</button>
+                <button class="skill-chip" data-skill="Kubernetes">Kubernetes</button>
+            </div>
+
+            <!-- Form / Analyze Button — now BELOW popular skills -->
+            <form action="/recommend" method="POST" id="recommendForm">
+                <input type="hidden" name="skills" id="skills">
+                <button type="submit">Analyze Career →</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- AI Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-card">
+            <div class="loader-logo">PF</div>
+            <h2>PathForge AI</h2>
+            <p id="loadingText">Initializing...</p>
+            <div class="loading-bar">
+                <div id="loadingProgress"></div>
+            </div>
+            <span id="loadingPercent">0%</span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

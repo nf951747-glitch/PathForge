@@ -1,0 +1,152 @@
+{
+  "AI Engineer": {
+    "description": "Develops intelligent systems using artificial intelligence and machine learning techniques to solve complex real-world problems.",
+    "salary": "150,000 - 350,000 PKR",
+    "roadmap": ["Python", "NumPy", "Pandas", "Machine Learning", "TensorFlow", "Deep Learning", "Neural Networks"]
+  },
+  "Data Scientist": {
+    "description": "Analyzes large datasets to discover patterns, build predictive models, and support data-driven decision making.",
+    "salary": "140,000 - 300,000 PKR",
+    "roadmap": ["Python", "Pandas", "NumPy", "Statistics", "Machine Learning", "Data Visualization", "SQL"]
+  },
+  "Backend Developer": {
+    "description": "Builds and maintains server-side logic, APIs, and databases that power web applications.",
+    "salary": "120,000 - 250,000 PKR",
+    "roadmap": ["Python", "Flask / Django", "SQL", "REST API", "Authentication", "Deployment"]
+  },
+  "Frontend Developer": {
+    "description": "Creates responsive, interactive, and visually appealing user interfaces for web applications.",
+    "salary": "100,000 - 220,000 PKR",
+    "roadmap": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Responsive Design"]
+  },
+  "Full Stack Developer": {
+    "description": "Works across both frontend and backend, handling everything from UI design to server logic and database management.",
+    "salary": "130,000 - 280,000 PKR",
+    "roadmap": ["HTML", "CSS", "JavaScript", "React", "Node.js", "SQL", "REST API", "Deployment"]
+  },
+  "Cloud Engineer": {
+    "description": "Designs and manages scalable cloud infrastructure using platforms like AWS, Azure, and Google Cloud.",
+    "salary": "140,000 - 320,000 PKR",
+    "roadmap": ["Linux", "Networking", "AWS / Azure", "Docker", "Kubernetes", "Terraform", "CI/CD"]
+  },
+  "DevOps Engineer": {
+    "description": "Bridges development and operations by automating pipelines, managing infrastructure, and ensuring fast, reliable software delivery.",
+    "salary": "130,000 - 300,000 PKR",
+    "roadmap": ["Linux", "Git", "Docker", "CI/CD", "Kubernetes", "AWS", "Monitoring"]
+  },
+  "Cyber Security Analyst": {
+    "description": "Protects systems and networks from cyber threats by monitoring, detecting, and responding to security incidents.",
+    "salary": "120,000 - 280,000 PKR",
+    "roadmap": ["Networking", "Linux", "Ethical Hacking", "Python", "Firewalls", "Cryptography", "SIEM Tools"]
+  },
+  "Mobile App Developer": {
+    "description": "Builds native and cross-platform mobile applications for Android and iOS devices.",
+    "salary": "110,000 - 250,000 PKR",
+    "roadmap": ["Flutter / React Native", "Dart / JavaScript", "Firebase", "REST APIs", "UI Design", "App Store Deployment"]
+  },
+  "UI/UX Designer": {
+    "description": "Designs user-centered interfaces and experiences, focusing on usability, accessibility, and visual appeal.",
+    "salary": "90,000 - 200,000 PKR",
+    "roadmap": ["User Research", "Wireframing", "Figma", "Prototyping", "Design Thinking", "Usability Testing"]
+  },
+  "Software Engineer": {
+    "description": "Designs, develops, and maintains software systems using strong programming fundamentals and problem-solving skills.",
+    "salary": "120,000 - 260,000 PKR",
+    "roadmap": ["Data Structures", "Algorithms", "OOP", "Python / Java / C++", "Git", "System Design"]
+  },
+  "Machine Learning Engineer": {
+    "description": "Builds and deploys machine learning models at scale, bridging research and production systems.",
+    "salary": "150,000 - 350,000 PKR",
+    "roadmap": ["Python", "Scikit-learn", "TensorFlow / PyTorch", "Feature Engineering", "Model Deployment", "MLOps"]
+  },
+  "Data Analyst": {
+    "description": "Collects, processes, and interprets data to generate actionable business insights through reports and dashboards.",
+    "salary": "90,000 - 200,000 PKR",
+    "roadmap": ["Excel", "SQL", "Python / Pandas", "Power BI / Tableau", "Statistics", "Data Visualization"]
+  },
+  "Game Developer": {
+    "description": "Creates video games for PC, console, or mobile using game engines, physics, and interactive design principles.",
+    "salary": "100,000 - 240,000 PKR",
+    "roadmap": ["C#", "Unity / Unreal Engine", "3D Modeling", "Game Physics", "Animation", "Shader Programming"]
+  },
+  "Blockchain Developer": {
+    "description": "Develops decentralized applications and smart contracts on blockchain platforms like Ethereum.",
+    "salary": "150,000 - 350,000 PKR",
+    "roadmap": ["Solidity", "Ethereum", "Web3.js", "Smart Contracts", "Cryptography", "Node.js", "DeFi Concepts"]
+  },
+  "Network Engineer": {
+    "description": "Designs, implements, and manages computer networks to ensure reliable and secure connectivity.",
+    "salary": "100,000 - 220,000 PKR",
+    "roadmap": ["Networking Fundamentals", "TCP/IP", "Cisco / Juniper", "Routing & Switching", "Firewalls", "VPN", "Linux"]
+  },
+  "Database Administrator": {
+    "description": "Manages and optimizes databases, ensuring data integrity, security, and high performance.",
+    "salary": "110,000 - 230,000 PKR",
+    "roadmap": ["SQL", "MySQL / PostgreSQL", "MongoDB", "Database Design", "Query Optimization", "Backup & Recovery"]
+  },
+  "QA Engineer": {
+    "description": "Ensures software quality by designing and executing tests, identifying bugs, and preventing defects before release.",
+    "salary": "90,000 - 200,000 PKR",
+    "roadmap": ["Testing Fundamentals", "Selenium", "Python / Java", "Test Planning", "Bug Tracking", "Automation Frameworks"]
+  },
+  "Systems Administrator": {
+    "description": "Manages and maintains IT infrastructure including servers, operating systems, and internal networks.",
+    "salary": "100,000 - 210,000 PKR",
+    "roadmap": ["Linux / Windows Server", "Networking", "Shell Scripting", "Virtualization", "Active Directory", "Monitoring"]
+  },
+  "Embedded Systems Engineer": {
+    "description": "Develops software for embedded hardware devices like microcontrollers, IoT sensors, and real-time systems.",
+    "salary": "110,000 - 250,000 PKR",
+    "roadmap": ["C / C++", "Microcontrollers", "RTOS", "Electronics Basics", "Arduino / Raspberry Pi", "Hardware Debugging"]
+  },
+  "NLP Engineer": {
+    "description": "Builds systems that understand, interpret, and generate human language using natural language processing techniques.",
+    "salary": "140,000 - 320,000 PKR",
+    "roadmap": ["Python", "NLTK / spaCy", "Transformers", "BERT / GPT", "Text Classification", "Sentiment Analysis"]
+  },
+  "Computer Vision Engineer": {
+    "description": "Develops systems that can interpret and understand images and videos using deep learning and image processing.",
+    "salary": "140,000 - 330,000 PKR",
+    "roadmap": ["Python", "OpenCV", "CNN", "TensorFlow / PyTorch", "Object Detection", "Image Segmentation"]
+  },
+  "AR/VR Developer": {
+    "description": "Creates immersive augmented and virtual reality experiences for gaming, training, and enterprise applications.",
+    "salary": "130,000 - 300,000 PKR",
+    "roadmap": ["C#", "Unity / Unreal Engine", "3D Modeling", "AR SDK", "Spatial Computing", "VR Hardware Integration"]
+  },
+  "Data Engineer": {
+    "description": "Builds and maintains data pipelines, warehouses, and infrastructure that enable data analysis at scale.",
+    "salary": "140,000 - 310,000 PKR",
+    "roadmap": ["Python", "SQL", "Apache Spark", "Hadoop", "ETL Pipelines", "Airflow", "AWS / GCP"]
+  },
+  "Product Manager": {
+    "description": "Defines product vision, coordinates teams, and drives the development of successful digital products.",
+    "salary": "120,000 - 280,000 PKR",
+    "roadmap": ["Agile / Scrum", "User Research", "Roadmapping", "Wireframing", "Data Analytics", "Stakeholder Communication"]
+  },
+  "Technical Writer": {
+    "description": "Creates clear and concise technical documentation, API guides, and manuals for software products.",
+    "salary": "70,000 - 160,000 PKR",
+    "roadmap": ["Technical Writing", "Markdown / Docs Tools", "API Documentation", "Research Skills", "Communication", "Editing"]
+  },
+  "IT Support Specialist": {
+    "description": "Provides technical assistance and troubleshooting support for hardware, software, and network issues.",
+    "salary": "60,000 - 140,000 PKR",
+    "roadmap": ["Windows / Linux", "Networking Basics", "Hardware Troubleshooting", "Active Directory", "Helpdesk Tools", "Communication"]
+  },
+  "Scrum Master": {
+    "description": "Facilitates Agile development processes, removes blockers, and helps teams deliver high-quality software iteratively.",
+    "salary": "110,000 - 240,000 PKR",
+    "roadmap": ["Agile Methodology", "Scrum Framework", "JIRA", "Team Facilitation", "Sprint Planning", "Retrospectives"]
+  },
+  "Android Developer": {
+    "description": "Builds feature-rich Android applications using Kotlin or Java, following Material Design principles.",
+    "salary": "110,000 - 240,000 PKR",
+    "roadmap": ["Java / Kotlin", "Android SDK", "XML / Jetpack Compose", "Firebase", "REST APIs", "Google Play Deployment"]
+  },
+  "iOS Developer": {
+    "description": "Creates high-performance iOS applications using Swift, following Apple's design guidelines and ecosystem.",
+    "salary": "120,000 - 260,000 PKR",
+    "roadmap": ["Swift", "Xcode", "UIKit / SwiftUI", "Firebase", "REST APIs", "App Store Deployment"]
+  }
+}

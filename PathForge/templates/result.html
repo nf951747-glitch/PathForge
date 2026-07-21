@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PathForge AI Results</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+
+    </div>
+
+    <div class="results-page">
+
+        <div class="results-header">
+
+            <h1>Your Career Matches</h1>
+
+            <p>
+                Based on your selected skills,
+                these are the best career paths.
+            </p>
+
+        </div>
+
+        <div class="results-grid">
+
+            {% for career in careers %}
+
+            <div class="result-card">
+
+                <div class="career-top">
+
+                    <h2>{{ career.career }}</h2>
+
+                    <span class="score-badge">
+                        {{ career.score }}%
+                    </span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-fill" style="--progress: {{ career.score }}%;"></div>
+                </div>
+
+                <h4>Description</h4>
+
+                <p>
+                    {{ career.description }}
+                </p>
+
+                <h4>Estimated Salary</h4>
+
+                <p>
+                    {{ career.salary }}
+                </p>
+
+                <h4>Learning Roadmap</h4>
+
+                <div class="roadmap">
+
+                    {% for skill in career.roadmap %}
+
+                    <div class="roadmap-step">
+
+                        {{ skill }}
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="back-section">
+
+            <a href="/">
+                ← Analyze Another Skill Set
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
