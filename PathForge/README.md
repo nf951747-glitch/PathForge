@@ -10,13 +10,13 @@ PathForge uses **TF-IDF Vectorization** and **Cosine Similarity** to compare use
 
 ### Home Page
 
-<img width="1920" height="973" alt="image" src="https://github.com/user-attachments/assets/18cf0df7-9a06-43d3-8ed9-adade2bb0cff" />
+<img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/ab8e76ee-c557-4c20-94d6-ff6dd942fc7f" />
 
 ---
 
 ### 🎯 Recommendation Results
 
-<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/620fcc95-1af5-447a-8539-9c97bcdae8c5" />
+<img width="1920" height="976" alt="image" src="https://github.com/user-attachments/assets/f61b30c0-443c-4812-806a-baf93e0cfce2" />
 
 ---
 
